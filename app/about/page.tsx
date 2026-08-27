@@ -15,7 +15,7 @@ export default function Page() {
       <h1 className="font-semibold tracking-tighter mb-5">about</h1>
 
       <div className="space-y-6">
-        <p className="text-gray-500">
+        <p className="">
           I'm a full-stack developer working mostly in the Node.js and React
           world, though my first real job had me writing Delphi for a telecom
           monitoring system, so I've made peace with jumping into whatever a
@@ -27,7 +27,7 @@ export default function Page() {
       </div>
       <hr className="mt-8 mb-8 border-t border-gray-100" />
       <div className="space-y-6">
-        <p className="text-gray-500">
+        <p className="">
           Frontend is React, with Tailwind and Sass for styling. Backend is Node
           — Express when the project is simple, NestJS when it needs more
           structure and I want the compiler yelling at me before my users do.
@@ -49,12 +49,12 @@ export default function Page() {
             <div className="flex justify-between items-start mb-2">
               <p className="text-white-200 text-lg">
                 {exp.role}{" "}
-                <span className="text-xs text-gray-500">{exp.company}</span>
+                <span className="text-base text-gray-500">.{exp.company}</span>
               </p>
               <span className=" text-gray-500 text-xs">{exp.period}</span>
             </div>
 
-            <p className=" text-gray-500 mb-4">{exp.description}</p>
+            <p className="mb-4">{exp.description}</p>
 
             {/* <div className="flex flex-wrap gap-2 ">
               {exp.tech.map((tech) => (
