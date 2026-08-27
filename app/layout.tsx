@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     template: '',
   },
   description: 'This is my portfolio.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: 'My Portfolio',
     description: 'This is my portfolio.',
