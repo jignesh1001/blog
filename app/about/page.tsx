@@ -7,8 +7,7 @@ export default function Page() {
       period: "June 2024 – May 2025",
       tech: ["Delphi", "MySQL", "PLSQL"],
       description:
-           " Worked on a telecom Network Management System (NMS) in Delphi with real-time SNMP-based monitoring of network device health, performance, and availability.Designed real-time dashboards and alerting systems to surface faults and performance anomalies, reducing mean-time-to-detection for network issues.Built automated watchdog and self-healing workflows using FireDaemon-managed services to auto-restart failed processes,improving application uptime and reducing manual intervention.Developed core communication modules for device polling, alarm correlation, and performance-data collection, enabling scalable monitoring across telecom infrastructure."
-        
+        " Worked on a telecom Network Management System (NMS) in Delphi with real-time SNMP-based monitoring of network device health, performance, and availability.Designed real-time dashboards and alerting systems to surface faults and performance anomalies, reducing mean-time-to-detection for network issues.Built automated watchdog and self-healing workflows using FireDaemon-managed services to auto-restart failed processes,improving application uptime and reducing manual intervention.Developed core communication modules for device polling, alarm correlation, and performance-data collection, enabling scalable monitoring across telecom infrastructure.",
     },
   ];
   return (
@@ -40,6 +39,7 @@ export default function Page() {
         </p>
       </div>
       <hr className="mt-8 mb-8 border-t border-gray-100" />
+      <h1 className="font-semibold tracking-tighter mb-5">past work</h1>
       <div className="space-y-6">
         {experiences.map((exp) => (
           <div
@@ -47,10 +47,12 @@ export default function Page() {
             className=" p-3 shadow-md border border-transparent transition-colors duration-300"
           >
             <div className="flex justify-between items-start mb-2">
-              <p className="text-white-200 text-lg">{exp.role} <span className="text-xs text-gray-500">{exp.company}</span></p>
+              <p className="text-white-200 text-lg">
+                {exp.role}{" "}
+                <span className="text-xs text-gray-500">{exp.company}</span>
+              </p>
               <span className=" text-gray-500 text-xs">{exp.period}</span>
             </div>
-
 
             <p className=" text-gray-500 mb-4">{exp.description}</p>
 
