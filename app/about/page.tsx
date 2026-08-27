@@ -7,7 +7,8 @@ export default function Page() {
       period: "June 2024 – May 2025",
       tech: ["Delphi", "MySQL", "PLSQL"],
       description:
-        "Built and maintained enterprise communication and networking software in Delphi, supporting regulatory compliance and real-time network monitoring for client systems.",
+           " Worked on a telecom Network Management System (NMS) in Delphi with real-time SNMP-based monitoring of network device health, performance, and availability.Designed real-time dashboards and alerting systems to surface faults and performance anomalies, reducing mean-time-to-detection for network issues.Built automated watchdog and self-healing workflows using FireDaemon-managed services to auto-restart failed processes,improving application uptime and reducing manual intervention.Developed core communication modules for device polling, alarm correlation, and performance-data collection, enabling scalable monitoring across telecom infrastructure."
+        
     },
   ];
   return (
@@ -15,7 +16,7 @@ export default function Page() {
       <h1 className="font-semibold tracking-tighter mb-5">about</h1>
 
       <div className="space-y-6">
-        <p className="text-gray-300">
+        <p className="text-gray-500">
           I'm a full-stack developer working mostly in the Node.js and React
           world, though my first real job had me writing Delphi for a telecom
           monitoring system, so I've made peace with jumping into whatever a
@@ -27,7 +28,7 @@ export default function Page() {
       </div>
       <hr className="mt-8 mb-8 border-t border-gray-100" />
       <div className="space-y-6">
-        <p className="text-gray-300">
+        <p className="text-gray-500">
           Frontend is React, with Tailwind and Sass for styling. Backend is Node
           — Express when the project is simple, NestJS when it needs more
           structure and I want the compiler yelling at me before my users do.
@@ -46,13 +47,12 @@ export default function Page() {
             className=" p-3 shadow-md border border-transparent transition-colors duration-300"
           >
             <div className="flex justify-between items-start mb-2">
-              <h1 className=" ">{exp.company}</h1>
-              <span className=" text-gray-400 text-xs">{exp.period}</span>
+              <p className="text-white-200 text-lg">{exp.role} <span className="text-xs text-gray-500">{exp.company}</span></p>
+              <span className=" text-gray-500 text-xs">{exp.period}</span>
             </div>
 
-            <p className=" text-gray-300 mb-2">{exp.role}</p>
 
-            <p className=" text-gray-300 mb-4">{exp.description}</p>
+            <p className=" text-gray-500 mb-4">{exp.description}</p>
 
             {/* <div className="flex flex-wrap gap-2 ">
               {exp.tech.map((tech) => (
